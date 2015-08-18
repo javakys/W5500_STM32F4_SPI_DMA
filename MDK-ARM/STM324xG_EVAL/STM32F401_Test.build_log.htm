@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: •ÏVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: james Kim, WIZnet, Co., LTD., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      UL2CM3.DLL V1.155.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\Work\STM32F4xx_DSP_StdPeriph_Lib_V1.1.0-master\STM32F4xx_DSP_StdPeriph_Lib_V1.1.0-master\Project\STM32F4xx_StdPeriph_Templates_source\MDK-ARM\Project.uvprojx
+Project File Date:  05/14/2015
+
+<h2>Output:</h2>
+Rebuild target 'STM324xG_EVAL'
+compiling stm32f4xx_it.c...
+compiling main.c...
+..\main.c(282): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if((ret = loopback_tcps(sn, gDATABUF, 3000)) < 0)
+..\main.c(287): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if((ret = loopback_tcps(sn+1, gDATABUF, 3000)) < 0)
+..\main.c(196): warning:  #177-D: variable "current_time" was declared but never referenced
+        uint32_t current_time = 0;
+..\main.c(308): warning:  #177-D: function "Delay" was declared but never referenced
+  void Delay(__IO uint32_t nTime)
+..\main.c: 4 warnings, 0 errors
+compiling Retarget.c...
+compiling Serial.c...
+compiling stm324xg_eval_lcd.c...
+compiling stm324xg_eval.c...
+compiling stm324xg_eval_ioe.c...
+compiling stm324xg_eval_fsmc_sram.c...
+compiling misc.c...
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_sdio.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f40xx.s...
+compiling wizchip_conf.c...
+..\Ethernet\wizchip_conf.c(353): warning:  #223-D: function "printf" declared implicitly
+                           printf("sock[%d]tx buf size: %d\r\n", i, txsize[i]);
+..\Ethernet\wizchip_conf.c(365): warning:  #223-D: function "printf" declared implicitly
+                           printf("sock[%d]rx buf size: %d\r\n", i, rxsize[i]);
+..\Ethernet\wizchip_conf.c: 2 warnings, 0 errors
+compiling socket.c...
+compiling w5500.c...
+..\Ethernet\W5500\w5500.c(172): warning:  #177-D: variable "i" was declared but never referenced
+     uint16_t i = 0;
+..\Ethernet\W5500\w5500.c(173): warning:  #177-D: variable "j" was declared but never referenced
+     uint16_t j = 0;
+..\Ethernet\W5500\w5500.c(266): warning:  #177-D: variable "i" was declared but never referenced
+     uint16_t i = 0;
+..\Ethernet\W5500\w5500.c(267): warning:  #177-D: variable "j" was declared but never referenced
+     uint16_t j = 0;
+..\Ethernet\W5500\w5500.c: 4 warnings, 0 errors
+compiling loopback.c...
+..\Application\loopback.c(273): warning:  #177-D: variable "packinfo" was declared but never referenced
+     uint8_t  packinfo = 0;
+..\Application\loopback.c(316): warning:  #177-D: variable "sentsize" was declared but never referenced
+     int32_t sentsize = 0;
+..\Application\loopback.c: 2 warnings, 0 errors
+compiling rcc_handler.c...
+..\PlatformHandler\rcc_handler.c(11): warning:  #188-D: enumerated type mixed with another type
+        RCC_HSICmd(RCC_CR_HSION);
+..\PlatformHandler\rcc_handler.c: 1 warning, 0 errors
+compiling gpio_handler.c...
+compiling timer_handler.c...
+compiling uart_handler.c...
+compiling spi_handler.c...
+..\PlatformHandler\spi_handler.c(115): warning:  #223-D: function "wizchip_select" declared implicitly
+        wizchip_select();
+..\PlatformHandler\spi_handler.c(140): warning:  #223-D: function "wizchip_deselect" declared implicitly
+        wizchip_deselect();
+..\PlatformHandler\spi_handler.c(223): warning:  #223-D: function "wizchip_select" declared implicitly
+        wizchip_select();
+..\PlatformHandler\spi_handler.c(244): warning:  #223-D: function "wizchip_deselect" declared implicitly
+        wizchip_deselect();
+..\PlatformHandler\spi_handler.c(160): warning:  #177-D: variable "i" was declared but never referenced
+        uint16_t i;
+..\PlatformHandler\spi_handler.c: 5 warnings, 0 errors
+compiling dma_handler.c...
+linking...
+Program Size: Code=21272 RO-data=440 RW-data=140 ZI-data=5268  
+FromELF: creating hex file...
+After Build - User command #1: .\HEX2BIN.exe  .\STM324xG_EVAL\STM32F401_Test.hex
+hex2bin v1.0.4, Copyright (C) 1998 Jacques Pelletier
+checksum extensions Copyright (C) 2004 Rockwell Automation
+Lowest address  = 00000000
+Highest address = 0000555B
+Pad Byte        = FF
+8-bit Checksum = 26
+".\STM324xG_EVAL\STM32F401_Test.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Work\STM32F4xx_DSP_StdPeriph_Lib_V1.1.0-master\STM32F4xx_DSP_StdPeriph_Lib_V1.1.0-master\Project\STM32F4xx_StdPeriph_Templates_source\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

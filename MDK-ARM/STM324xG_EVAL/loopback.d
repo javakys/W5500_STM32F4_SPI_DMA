@@ -1,0 +1,9 @@
+.\stm324xg_eval\loopback.o: ..\Application\loopback.c
+.\stm324xg_eval\loopback.o: ..\Application/loopback.h
+.\stm324xg_eval\loopback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\stm324xg_eval\loopback.o: ..\Ethernet/W5500/w5500.h
+.\stm324xg_eval\loopback.o: ..\Ethernet/W5500/../wizchip_conf.h
+.\stm324xg_eval\loopback.o: ..\Ethernet/W5500/../W5500/w5500.h
+.\stm324xg_eval\loopback.o: ..\Ethernet/socket.h
+.\stm324xg_eval\loopback.o: ..\common.h
+.\stm324xg_eval\loopback.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
